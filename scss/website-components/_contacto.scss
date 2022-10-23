@@ -1,0 +1,32 @@
+.section-contacto{
+    background-color: #6266a0;
+}
+
+.contacto{
+    background-color: #A6B1E1;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+.contacto div{
+    padding-bottom: 20px;
+}
+
+.section-contacto h1{
+    text-align: center;
+    color: #eaedff;
+    padding-top: 120px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contacto iframe{
+    border-radius: 15px;
+    padding: 10px;
+}

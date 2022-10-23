@@ -1,0 +1,59 @@
+.section-manga{
+    background-color: #6266a0;
+    padding: 10px;
+}
+
+.section-manga h1{
+    font-size: 35px;
+    padding-top: 40px;
+    color: #f1f1f1;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.grid-container > div{
+    background-color: #ffffff;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-container img{
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.grid-container img:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.grid-container a{
+    font-weight: bold;
+    font-size: 16px;
+    color: #fbfff6;
+    background-color: #21327e;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 40px;
+    border: #424874 solid 2px
+}
+
+.grid-container a:hover{
+    transition: 0.7s;
+    color: #e6e0fd;
+    background-color: #87e448;
+    border: #5ffc50 solid 2px
+}

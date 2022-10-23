@@ -1,0 +1,105 @@
+.intro{
+    background-image: url(../img/imagen-fondo.png);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buscador{
+    display: flex;
+    justify-content: center;
+}
+
+.buscador button{
+    font-weight: bold;
+    color: #7677a0;
+    border: 2px solid white;
+}
+
+.buscador button:hover{
+    color: #ffffff;
+    background-color: #4c4d91;
+}
+
+.intro h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.intro h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.novedades-container{
+    background-color: #6674ec!important;
+}
+
+.grid-cartas{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    padding: 10px 5px;
+    justify-content: space-around;
+}
+
+.grid-cartas > div{
+    background-color: #ffffff;
+    color: #000000;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.grid-cartas img{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.grid-cartas img:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.grid-cartas a{
+    font-weight: bold;
+    font-size: 16px;
+    color: #424874;
+    background-color: #A6B1E1;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 40px;
+    border: #424874 solid 2px
+}
+
+.grid-cartas a:hover{
+    transition: 0.7s;
+    color: #e6e0fd;
+    background-color: #21327e;
+
+}
+
+.novedades-container h2{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card img{
+    height: 250px;
+    width: auto;
+}

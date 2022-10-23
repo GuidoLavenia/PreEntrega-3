@@ -1,0 +1,31 @@
+.navbar{
+    background-color: $color1;
+    
+}
+.container-fluid img{
+    width: 60px;
+    height: auto;
+}
+
+header nav div div ul .nav-link {
+    color: #a3a7c4 !important;
+    font-weight: bold;
+}
+
+header nav div div ul .nav-link:hover {
+    color: #e6e0fd !important;
+    text-shadow: 1px 1px 1px #424874;
+}
+
+.navbar-toggler{
+    background-color: #ffffff;
+}
+
+.dropdown-menu{
+    background-color: #817b7b;
+}
+
+.dropdown-item{
+    color: #eaedff;
+    font-weight: bold ;
+}

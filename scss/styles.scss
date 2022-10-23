@@ -1,0 +1,35 @@
+@import "./base/variables";
+@import "./base/reset";
+@import "./page-parts/header";
+@import "./page-parts/main";
+@import "./page-parts/footer";
+@import "./website-components/contacto";
+@import "./website-components/nosotros";
+@import "./website-components/productos";
+@import "./website-components/manga-y-anime";
+@import "./base/mediaqueries";
+
+.header{
+    grid-area: header;
+}
+
+.navbar{
+    grid-area: navbar;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.grid-contenedor{
+    display: grid;
+    grid-template:
+        "header"  10px
+        "navbar"  50px
+        "main"    auto
+        "footer"  150px;
+}
