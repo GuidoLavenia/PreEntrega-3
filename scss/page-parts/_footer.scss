@@ -1,3 +1,9 @@
+@mixin flexbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .footer {
     width: 100%;
     bottom: 0;
@@ -5,11 +11,12 @@
     background-color: $color1;
     color: #ffffff;
     text-align: center;
-    display: flex;
+    @include flexbox;
     justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
     padding: 1.5rem;
+    @media screen and (min-width:550px){
+        flex-direction: row;
+    }
     img{
         width: 45px;
         margin-bottom: 1rem;
@@ -19,15 +26,15 @@
         font-weight: lighter;
     }
     .redes{
-        display: flex;
-        flex-direction: column;
+        @include flexbox;
         justify-content: center;
-        align-items: center;
     }
     svg {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
+        @media screen and (min-width:550px){
+            width: 50px;
+            height: 50px;
+        }
     }
 }
-
-

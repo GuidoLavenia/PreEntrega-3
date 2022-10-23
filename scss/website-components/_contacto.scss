@@ -1,32 +1,40 @@
-.section-contacto{
-    background-color: $color2;
-}
-
-.contacto{
-    background-color: #A6B1E1;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    color: #f1f1f1;
+@mixin titulos{
+    font-size: 35px;
     font-weight: bold;
-}
-
-.contacto div{
-    padding-bottom: 20px;
-}
-
-.section-contacto h1{
     text-align: center;
-    color: #eaedff;
-    padding-top: 120px;
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 30px;
+    color: $color4;
 }
 
-.contacto iframe{
-    border-radius: 15px;
-    padding: 10px;
+.section-contacto {
+    background-color: $color2;
+    .contacto {
+        background-color: $color3;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #f1f1f1;
+        font-weight: bold;
+        @media screen and (min-width:550px) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        div {
+            padding-bottom: 20px;
+        }
+        iframe {
+            border-radius: 15px;
+            padding: 10px;
+        }
+    }
+    h1 {
+        @include titulos;
+        padding-top: 120px;
+        margin-bottom: 30px;
+        @media screen and (min-width:550px) {
+            font-size: 40px;
+            padding-top: 100px;
+        }
+    }
 }

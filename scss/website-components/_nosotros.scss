@@ -1,25 +1,25 @@
-.container{
-    background-color: $color2;
-}
-
-.nosotros{
-    background-color: #A6B1E1;
-    color: #e6e0fd;
-    font-weight: bold;
-    text-align: justify;
-}
-
-
-.container h1{
+@mixin titulos{
     font-size: 35px;
-    padding-top: 40px;
-    color: #f1f1f1;
     font-weight: bold;
     text-align: center;
-
+    color: $color4;
 }
 
-.container img{
-    width: 250px;
-    border-radius: 20px;
+.container{
+    background-color: $color2;
+    h1{
+        @include titulos;
+        padding-top: 40px;
+    }
+    img{
+        width: 250px;
+        border-radius: 20px;
+    }
+    .nosotros{
+        background-color: $color3;
+        color: #e6e0fd;
+        font-weight: bold;
+        text-align: justify;
+    }
 }
+

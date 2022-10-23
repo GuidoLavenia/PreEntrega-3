@@ -1,83 +1,82 @@
-.section-productos{
-    background-color: $color2;
-}
-
-.grid-productos{
-    background-color: #A6B1E1;
-    gap: 10px;
-    padding: 10px;
-    display: grid;
-    grid-template: 
-        "manga"
-        "comics"
-        "disney"
-        "otros";
-}
-
-@media (min-width: 900px){
-    .grid-productos{
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-.grid-productos > div{
-    background-color: #6266a0;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.grid-productos a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.grid-productos a:hover{
-    transform: scale(1.5);
-    transition: 0.6s;
-}
-
-.section-productos h1{
+@mixin titulos {
     font-size: 35px;
-    padding-top: 40px;
-    color: #f1f1f1;
     font-weight: bold;
     text-align: center;
+    color: $color4;
 }
 
-.manga{
-    background-image: url(../img/mangas.png);
+@mixin productos {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50px;
 }
 
-.comics{
-    background-image: url(../img/marvel.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50px;
-}
+.section-productos {
+    background-color: $color2;
 
-.disney{
-    background-image: url(../img/peterpan.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50px;
-}
+    h1 {
+        @include titulos;
+        padding-top: 40px;
+    }
 
-.otros{
-    background-image: url(../img/otros.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50px;
+    .grid-productos {
+        background-color: $color3;
+        gap: 10px;
+        padding: 10px;
+        display: grid;
+        grid-template:
+            "manga"
+            "comics"
+            "disney"
+            "otros";
+
+        @media (min-width: 900px) {
+
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .manga {
+            background-image: url(../img/mangas.png);
+            @include productos;
+        }
+
+        .comics {
+            background-image: url(../img/marvel.jpg);
+            @include productos;
+        }
+
+        .disney {
+            background-image: url(../img/peterpan.png);
+            @include productos;
+        }
+
+        .otros {
+            background-image: url(../img/otros.png);
+            @include productos;
+        }
+
+        div {
+            background-color: $color2;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color4;
+            font-size: 25px;
+            font-weight: bold;
+
+            &:hover {
+                transform: scale(1.5);
+                transition: 0.6s;
+            }
+        }
+    }
 }

@@ -7,7 +7,6 @@
 @import "./website-components/nosotros";
 @import "./website-components/productos";
 @import "./website-components/manga-y-anime";
-@import "./base/mediaqueries";
 
 .header{
     grid-area: header;
@@ -31,5 +30,11 @@
         "header"  10px
         "navbar"  50px
         "main"    auto
-        "footer"  150px;
+        "footer"  300px;
+
+    @media (min-width: 600px){
+        grid-template-rows: 10px 40px auto 150px; }
+        
+    @media (min-width: 900px){
+        grid-template-rows: 10px 60px auto 150px;}
 }
