@@ -1,9 +1,4 @@
-@mixin titulos{
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    color: $color4;
-}
+@import "mixins";
 
 .container{
     background-color: $color2;

@@ -1,16 +1,4 @@
-@mixin titulos {
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    color: $color4;
-}
-
-@mixin productos {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50px;
-}
+@import "mixins";
 
 .section-productos {
     background-color: $color2;

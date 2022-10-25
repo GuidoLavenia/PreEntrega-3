@@ -1,15 +1,4 @@
-@mixin titulos {
-    font-size: 35px;
-    font-weight: bold;
-    text-align: center;
-    color: $color4;
-}
-
-@mixin flexbox{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+@import "mixins";
 
 .section-manga {
     background-color: $color2;
