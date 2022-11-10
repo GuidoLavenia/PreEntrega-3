@@ -47,7 +47,7 @@ body {
     font-size: 45px; }
     @media screen and (min-width: 550px) {
       .intro h1 {
-        font-size: 55px; } }
+        font-size: 65px; } }
   .intro h2 {
     font-weight: bold;
     font-size: 26px; }
@@ -66,12 +66,13 @@ body {
         background-color: #4c4d91; }
 
 .novedades-container {
-  background-color: #6674ec !important; }
+  background-color: #bbb5b5;
+  padding-bottom: 3rem; }
   .novedades-container .grid-cartas {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-    padding: 10px 5px;
+    padding: 25px 5px;
     justify-content: space-around; }
     .novedades-container .grid-cartas div {
       background-color: #ffffff;
@@ -102,7 +103,12 @@ body {
       .novedades-container .grid-cartas a:hover {
         transition: 0.7s;
         color: #e6e0fd;
-        background-color: #21327e; }
+        background-color: #87e448;
+        border: #5ffc50 solid 2px; }
+    .novedades-container .grid-cartas p {
+      color: #000000;
+      font-size: 0.9rem;
+      padding: 0.5rem; }
   .novedades-container h2 {
     color: #ffffff;
     font-size: 35px;
@@ -111,8 +117,22 @@ body {
     padding-top: 30px;
     padding-bottom: 30px; }
     @media screen and (min-width: 550px) {
-      .novedades-container h2 h2 {
-        font-size: 50px; } }
+      .novedades-container h2 {
+        font-size: 45px; } }
+  .novedades-container h3 {
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center; }
+  .novedades-container .texto-novedades {
+    background-color: #6266a0;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+    @media screen and (min-width: 550px) {
+      .novedades-container .texto-novedades {
+        margin-left: 2rem;
+        margin-right: 2rem; } }
 
 .footer {
   width: 100%;
@@ -168,6 +188,20 @@ body {
     .section-contacto .contacto iframe {
       border-radius: 15px;
       padding: 10px; }
+    .section-contacto .contacto button {
+      font-weight: bold;
+      font-size: 16px;
+      color: #fbfff6;
+      background-color: #21327e;
+      text-decoration: none;
+      padding: 8px;
+      border-radius: 40px;
+      border: #424874 solid 2px; }
+      .section-contacto .contacto button:hover {
+        transition: 0.7s;
+        color: #e6e0fd;
+        background-color: #87e448;
+        border: #5ffc50 solid 2px; }
   .section-contacto h1 {
     font-size: 35px;
     font-weight: bold;
@@ -179,23 +213,40 @@ body {
       .section-contacto h1 {
         font-size: 40px;
         padding-top: 100px; } }
+  .section-contacto input {
+    border-radius: 5px;
+    border: 3px solid #6266a0; }
 
-.container {
+.div-nosotros {
   background-color: #6266a0; }
-  .container h1 {
+  .div-nosotros h1 {
     font-size: 35px;
     font-weight: bold;
     text-align: center;
     color: #ffffff;
     padding-top: 40px; }
-  .container img {
+  .div-nosotros img {
     width: 250px;
-    border-radius: 20px; }
-  .container .nosotros {
-    background-color: #A6B1E1;
-    color: #e6e0fd;
-    font-weight: bold;
+    height: 250px;
+    border-radius: 20px;
+    padding: 0.5rem; }
+  .div-nosotros .nosotros {
+    background-color: #bbb5b5;
+    color: #000000;
     text-align: justify; }
+    .div-nosotros .nosotros .somos {
+      background-color: #A6B1E1;
+      padding-top: 0.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem; }
+  .div-nosotros .imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media screen and (min-width: 550px) {
+      .div-nosotros .imagen {
+        flex-direction: row;
+        justify-content: space-around; } }
 
 .section-productos {
   background-color: #6266a0; }
@@ -257,13 +308,22 @@ body {
 
 .section-manga {
   background-color: #6266a0;
-  padding: 10px; }
+  padding: 0.3rem;
+  padding-bottom: 3rem; }
   .section-manga h1 {
     font-size: 35px;
     font-weight: bold;
     text-align: center;
     color: #ffffff;
     padding-top: 40px; }
+  .section-manga h2 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold; }
+  .section-manga .presentacion {
+    background-color: #A6B1E1;
+    padding: 1rem;
+    margin-bottom: 2rem; }
   .section-manga .grid-container {
     display: grid;
     gap: 10px;
@@ -299,6 +359,10 @@ body {
         color: #e6e0fd;
         background-color: #87e448;
         border: #5ffc50 solid 2px; }
+    .section-manga .grid-container p {
+      color: #000000;
+      font-size: 0.9rem;
+      padding: 0.5rem; }
 
 .header {
   grid-area: header; }

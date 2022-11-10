@@ -1,6 +1,6 @@
-@import "mixins";
+@import "../base/mixins";
 
-.container{
+.div-nosotros{
     background-color: $color2;
     h1{
         @include titulos;
@@ -8,13 +8,30 @@
     }
     img{
         width: 250px;
+        height: 250px;
         border-radius: 20px;
+        padding: 0.5rem;
     }
     .nosotros{
-        background-color: $color3;
-        color: #e6e0fd;
-        font-weight: bold;
+        background-color: $color5;
+        color: $color1;
         text-align: justify;
+        .somos{
+            background-color: $color3;
+            padding-top: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+    .imagen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and(min-width:550px){
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
     }
 }
 
